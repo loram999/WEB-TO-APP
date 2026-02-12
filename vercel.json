@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "mick.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "mick.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
